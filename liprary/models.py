@@ -6,9 +6,9 @@ class Book(models.Model):
     author=models.CharField(max_length=25)
     title=models.CharField(max_length=50)
     details=models.TextField(max_length=500)
-    image=models.ImageField(upload_to='/books/images')
     slug=models.SlugField(null=True,blank=True)
     cateogry=models.ForeignKey('cateogry', on_delete=models.CASCADE,related_name='cateogry')
+    image=models.ImageField(upload_to='liprary/images')
     def __str__(self) :
         return self.title
     
