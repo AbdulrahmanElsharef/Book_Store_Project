@@ -1,4 +1,17 @@
-<h1>Liprariy web site</h1>
-{% for book in books %}
-<h3>{{book.title}}</h3>
-{% endfor %}
+<html>
+
+<head> </head>
+
+<body>
+    <h1>Liprariy web site</h1> <a href="books/add">
+        <button>Add New Book</button>
+    </a>
+    {% for book in books %}
+    <h3>{{book.title}}</h3>
+    <h3><a href="/books/{{book.slug}}"><img id="img" src="{{book.image.url}}" alt="book image" /></a></h3>
+    <hr>
+    {% endfor %}
+
+</body>
+
+</html>

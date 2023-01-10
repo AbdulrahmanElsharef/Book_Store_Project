@@ -1,0 +1,25 @@
+<html>
+
+<head> </head>
+
+<body>
+    <h1>{{book.title}}</h1>
+    <h2>Book cateogry :{{book.cateogry}} </h2>
+    <p>{{book.details}}</p>
+    <img id="img" src="{{book.image.url}}" alt="book image" />
+    <hr>
+    <!-- <h4><a href="/posts/{{obj.slug}}/edit">Edit Post</a> </h4>
+    <h4><a href="/posts/{{obj.slug}}/del">Delete Post</a> </h4> -->
+    <h5>{{book.author}}</h5>
+    <a href="/books/{{book.slug}}/edit">
+        <button>Edit Book</button>
+    </a>
+    <a href="/books/{{book.slug}}/del">
+        <button>Delete Book</button>
+    </a>
+    <a href="/books">
+        <button>Back Home</button>
+    </a>
+</body>
+
+</html>

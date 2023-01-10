@@ -1,0 +1,19 @@
+<html>
+
+<head> </head>
+
+<body>
+    <h1>Edit Book</h1>
+    <a href="/books">
+        <button>Back Home</button>
+    </a>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{update}}
+        <input type="submit" value="update Book">
+
+    </form>
+
+</body>
+
+</html>
