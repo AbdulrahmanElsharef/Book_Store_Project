@@ -5,6 +5,16 @@ from django.shortcuts import render, redirect
 from .models import Book, cateogry
 from .forms import BookForms
 
+def Home(request):
+    # obj='book1'
+    # context={'name':obj}
+    return render(request,'index.html')
+
+def about(request):
+    # obj='book1'
+    # context={'name':obj}
+    return render(request,'about.html')
+
 
 def all_books(request):
     all = Book.objects.all()
